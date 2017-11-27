@@ -13,7 +13,7 @@
                  [hikari-cp "1.8.3"]
                  [com.h2database/h2 "1.4.193"]
                  ]
-  :main component-ex.core
+  ;; :main component-ex.core
   ;; :main ^:skip-aot component-ex.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
@@ -21,4 +21,5 @@
                                   [com.stuartsierra/component.repl "0.2.0"]
                                   [cider/cider-nrepl "0.8.2"]]
                    :plugins [[lein-cljfmt "0.5.7"]]
+                   :source-paths ["dev"]
                    }})
